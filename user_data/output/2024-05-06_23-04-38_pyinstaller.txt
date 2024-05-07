@@ -1,0 +1,265 @@
+can you extract all code from the following text, fix it and print the complete code
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor\input\some_python_tutorial.mp4 frame: 0
+v8EGaMm wo B
+Navigate Code Refactor Run Tools VCS.
+dient +
+> & — Rmainpy ~ Hserverpy * @_init_py f dientpy fsetuppy * threads py
+v Ra qrge pygrcode “349
+& ocket os, shutil
+> | |
+f% mainpy - ea tit
+4 title = input("Give )
+“ text = input at y ike the Qf t )
+& seuppy sad
+& threads py
+> xternal Libraries file_name_svg = title +
+file_name_png = title +
+url = pyqrcode.create(text)
+url.svg(file_name_svg
+url. png(file_name_png
+os.mkdir(f
+shutil.move(file_name_png
+1 shutil.move(file_name_svg, fr"C:\Users\feder\Desktop\{title}")
+Terminal: Local + i =
+c: \users\feder\pycharmprojects\qr_gen\venv\scripts\pyi-archive_viewer.exe
+c:\users\feder\pycharmprojects\qr_gen\venv\scripts\pyi-bindepend. exe
+c:\users\feder\pycharmprojects\qr_gen\venv\scripts\pyi-grab_version.exe
+c:\users\feder\pycharmprojects\qr_gen\venv\scripts\pyi-makespec.exe
+c:\users\feder\pycharmprojects\qr_gen\venv\scripts\pyi-set_version.exe h
+c:\users\feder\pycharmprojects\qr_gen\venv\scripts\pyinstaller.exe
+3 * Proceed (y/n)? y
+Successfully uninstalled pyinstaller-4.2
+Se
+* (venv) C:\Users\feder\PycharmProjects\qr_gen>| |
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor\input\some_python_tutorial.mp4 frame: 7
+$= Structure
+3% Favorites
+url = pyqrcode.create(text)
+url.svg(file_name_svg, =8)
+urL.png(file_name_png, =10)
+os.mkdir(fr"C:\Users\feder\Desktop\{title}")
+shutil.move(file_name_png, fr"C:\Users\feder\Desktop\{title}")
+18 shutil.move(file_name_svg, fr"C:\Users\feder\Desktop\{title}")
+Terminal: Local » +
+c:\users\feder\pycharmprojects\qr_gen\venv\scripts\pyi-archive_viewer.exe
+c:\users\feder\pycharmprojects\qr_gen\venv\scripts\pyi-bindepend.exe
+c:\users\feder\pycharmprojects\qr_gen\venv\scripts\pyi-grab_version.exe
+c:\users\feder\pycharmprojects\qr_gen\venv\scripts\pyi-makespec.exe
+c:\users\feder\pycharmprojects\qr_gen\venv\scripts\pyi-set_version.exe
+c:\users\feder\pycharmprojects\qr_gen\venv\scripts\pyinstaller.exe
+Proceed (y/n)? y
+Successfully uninstalled pyinstaller-4.2
+(venv) C:\Users\feder\PycharmProjects\qr_gen>pip install pv
+cara PS = =... =e
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor\input\some_python_tutorial.mp4 frame: 14
+Se Structure
+% Favorites
+url = pyqrcode.create(text)
+url.svg(file_name_svg, =8)
+urL.png(file_name_png, =10)
+os.mkdir(fr"C: \Users\feder\Desktop\{title}")
+1 shutil.move(file_name_png, fr"C:\Users\feder\Desktop\{title}")
+18 shutil.move(file_name_svg, fr"C:\Users\feder\Desktop\{title}")
+Terminal: Local +
+ges (from pyinstaller) (2020.11)
+Requirement already satisfied: future in c:\users\feder\pycharmprojects\qr_gen\venv\lib\site-packages (from pefi
+>pyinstaller) (0.18.2)
+Installing collected packages: pyinstaller
+Successfully installed pyinstaller-4.2
+WARNING: You are using pip version 20.3.3; however, version 21.0 is available.
+You should consider upgrading via the 'c:\users\feder\pycharmprojects\qr_gen\venv\scripts\python.exe -m pip inst
+pip’ command.
+(venv) C:\Users\feder\PycharmProjects\qr_gen> r
+rs ae a Se =a
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor\input\some_python_tutorial.mp4 frame: 21
+Edit View Navigate Code Refactor Run Tools VCS Window Help
+dient + >
+(32) & — Hmainpy ~ Hserverpy * f%_init_py ~ fclientpy ~ Msetuppy * & threadspy
+v Bu qrgen pygrcode def
+> Bil servers_sockets t os, shutil |
+> Bi venv |
+jon ag title = input("Give your QR code a title! )
+@ mainspec
+text = input("What y ike the QR cc t ay )
+tup py
+reads.py
+ernal Libraries file_name_svg = title + vg
+atches and Consoles Tile_name_png = title + ng
+url = pyqrcode.create(text)
+url.svg(file_name_svg
+url.png(file_name_png
+os.mkdir(fr
+shutil.move(file_name_png, fr ers\feder\Deskt title}")
+shutil.move(file_name_svg, fr"C Desktop\{title}")
+&
+Terminak: Local + s-
+ges (from pyinstaller) (2620.11)
+Requirement already satisfied: future in c:\users\feder\pycharmprojects\qr_gen\venv\lib\site-packages (from pefile>=2017.8.1-
+>pyinstaller) (6.18.2)
+Installing collected packages: pyinstaller
+& Successfully installed pyinstaller-4.2
+. & WARNING: You are using pip version 20.3.3; however, version 21.6 is available.
+S * vou should consider upgrading via the 'c:\users\feder\pycharmprojects\qr_gen\venv\scripts\python.exe -m pip install --upgrade
+pip' command.
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor\input\some_python_tutorial.mp4 frame: 28
+url.svg(file_name_svg, =8)
+url.png(file_name_png, =10)
+os.mkdir(fr"C: \Users\feder\Desktop\{title}")
+shutil.move(file_name_png, fr"C:\Users\feder\Desktop\{title}")
+18 shutil.move(file_name_svg, fr"C:\Users\feder\Desktop\{title}")
+Terminal: Local +
+ges (from pyinstaller) (2020.11)
+Requirement already satisfied: future in c:\users\feder\pycharmprojects\qr_gen\venv\Lib\site-packages
+>pyinstaller) (0.18.2)
+Installing collected packages: pyinstaller
+Successfully installed pyinstaller-4.2
+@ WARNING: You are using pip version 20.3.3; however, version 21.0 is available.
+- You should consider upgrading via the 'c:\users\feder\pycharmprojects\qr_gen\venv\scripts\python. exe
+pip' command.
+tructure
+°
+*% (venv) C:\Users\feder\PycharmProjects\qr_gen>pyinstaller main.py = |
+RR eannr pe oa ae Bae mains Sacsceian
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor\input\some_python_tutorial.mp4 frame: 35
+urlL.svg(file_name_svg, =8)
+url.png(file_name_png, =10)
+os.mkdir(fr"C:\Users\feder\Desktop\{title}")
+l shutil.move(file_name_png, fr"C:\Users\feder\Desktop\{title}")
+18 shutil.move(file_name_svg, fr"C:\Users\feder\Desktop\{title}")
+Terminal: Local +
+ges (from pyinstaller) (2020.11)
+Requirement already satisfied: future in c:\users\feder\pycharmprojects\qr_gen\venv\Lib\site-packages
+>pyinstaller) (0.18.2)
+Installing collected packages: pyinstaller
+Successfully installed pyinstaller-4.2
+&@ WARNING: You are using pip version 20.3.3; however, version 21.0 is available.
+- You should consider upgrading via the 'c:\users\feder\pycharmprojects\qr_gen\venv\scripts\python. exe
+pip' command.
+tructure
+Z
+°
+Fa
+*% (venv) C:\Users\feder\PycharmProjects\qr_gen>pyinstallep main.py --onefile
+PR eann a ahi a) Bs mahans Gassain
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor\input\some_python_tutorial.mp4 frame: 42
+vbGawd mis Bw
+Navigate Code Refactor Run Tool:
+tthe
+Bt qrgen dient >
+Project v
+% — femainpy < MHserverpy * fH _init_py &% dientpy MH setuppy * f% threadspy
+¥ Ba qrgen C\Us
+pygrcode “3249
+> Ba build os, shutil
+Be dist
+BF Projet
+title = input("Give y QR c title )
+text = input("What y it the Qf je t y )
+file_name_svg title +
+file_name_png = title +
+url = pyqrcode.create(text)
+url.svg(file_name_svg
+url.png(file_name_png
+os.mkdir(f
+shutil.move(file_name_png, f feder\Deskt title}")
+shutil.move(file_name_svg, fr"C:\Users\fe
+Terminal: Local + x
+8439 INFO: Writing RT_ICON 4 resource with 37019 bytes
+8439 INFO: Writing RT_ICON 5 resource with 9640 bytes
+8439 INFO: Writing RT_ICON 6 resource with 4264 bytes
+8439 INFO: Writing RT_ICON 7 resource with 1128 bytes
+8445 INFO: Updating manifest in C:\Users\feder\PycharmProjects\qr_gen\build\main\run.exe.v87zcxyg
+8446 INFO: Updating resource type 24 name 1 Language 0
+2 . * 8449 INFO: Appending archive to EXE C:\Users\feder\PycharmProjects\qr_gen\dist\main.exe
+8456 INFO: Building EXE from EXE-06.toc completed successfully.
+<
+* (venv) Cc: \Users\feder\PycharmProjects\qr_gen>| |
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor\input\some_python_tutorial.mp4 frame: 49
+veGawm is Bw
+Navigate
+main.exe dient +
+& maingy AB ientpy < MBseruppy x @ thresdspy
+pygrcode w3ay
+itd os, shutil
+Be dist |
+© main
+> Bu serve
+title = input( ey QR € title )
+text = input(
+‘ocke
+fe mai
+a file_name_svg = title +
+f setup py file_name_png = title +
+& threads py
+> tilt External
+ibraries url = pyqrcode.create(text)
+url.svg(file_name_svg =8)
+url.png(file_name_png
+os.mkdir(f
+shutil.move(file_name_png, f fede eskt title}")
+shutil.move(file_name_svg, f Users\feder\D p\{title}")
+Terminal: Local + x -
+8439 INFO: Writing RT_ICON 4 resource with 37019 bytes
+8439 INFO: Writing RT_ICON 5 resource with 9640 bytes
+8439 INFO: Writing RT_ICON 6 resource with 4264 bytes
+8439 INFO: Writing RT_ICON 7 resource with 1128 bytes
+:. 4 8445 INFO: Updating manifest in C:\Users\feder\PycharmProjects\qr_gen\build\main\run.exe.v87zcxyg
+8446 INFO: Updating resource type 24 name 1 language 0
+* 8449 INFO: Appending archive to EXE C:\Users\feder\PycharmProjects\qr_gen\dist\main.exe
+8456 INFO: Building EXE from EXE-06.toc completed successfully.
+Deg?
+* (venv) C:\Users\feder\PycharmProjects\qr_gen>| |
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor\input\some_python_tutorial.mp4 frame: 56
+veSGawm ws @
+© Eile Edit View Navigate Code Refactor Run Tools VCS Window Help
+dient ¥
+peat eicceare aed init_py * f&dientpy < @&setuppy * ff threads.py
+AB MBA Y
+e your QR code a title! >>")
+r would you Like the QR code to say? >>")
+rs\feder\Desktop\{title}")
+shutil.move(file_name_png, fr \Users\feder\Desktop\{title}")
+18 shutil.move(file_name_svg, fr"C:\Users\feder\Desktop\{title}")
+Terminal: Local + x -
+8439 INFO: Writing RT_ICON 4 resource with 37019 bytes
+8439 INFO: Writing RT_ICON 5 resource with 9640 bytes
+8439 INFO: Writing RT_ICON 6 resource with 4264 bytes
+8439 INFO: Writing RT_ICON 7 resource with 1128 bytes
+8445 INFO: Updating manifest in C:\Users\feder\PycharmProjects\qr_gen\build\main\run.exe.v87zcxyg
+& 8446 INFO: Updating resource type 24 name 1 Language 0
+8449 INFO: Appending archive to EXE C:\Users\feder\PycharmProjects\qr_gen\dist\main.exe
+8456 INFO: Building EXE from EXE-00.toc completed successfully.
+« (venv) C: \Users\feder\PycharmProjects\qr_gen>| |
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor\input\some_python_tutorial.mp4 frame: 63
+got =o moO © ele VEGaw mw w
+®
+File Edit View Navigate Code Refactor Run Tools VCS Window Help
+dienty P» &
+init_.py & dientpy & setuppy % threads. py
+e your QR code a title! >>")
+would you Like the QR code to say? >>")
+rs\feder\Desktop\{title}")
+shutil.move(file_name_png, fr
+18 shutil.move(file_name_svg, fr
+\Users\feder\Desktop\{title}")
+C:\Users\feder\Desktop\{title}")
+Terminal: Local + x -
+8439 INFO: Writing RT_ICON 4 resource with 37019 bytes
+8439 INFO: Writing RT_ICON 5 resource with 9640 bytes
+8439 INFO: Writing RT_ICON 6 resource with 4264 bytes
+8439 INFO: Writing RT_ICON 7 resource with 1128 bytes
+| 8445 INFO: Updating manifest in C:\Users\feder\PycharmProjects\qr_gen\build\main\run.exe.v87zcxyg
+& 8446 INFO: Updating resource type 24 name 1 Language 0
+8449 INFO: Appending archive to EXE C:\Users\feder\PycharmProjects\qr_gen\dist\main.exe
+= 8456 INFO: Building EXE from EXE-00.toc completed successfully.
+(venv) Cc: \Users\feder\PycharmProjects\qr_gen>| |

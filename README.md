@@ -1,7 +1,26 @@
 # AI_video_to_text_extractor
 this tool extracts all text from a video and saves it to a text file.
 this is tested on windows.
+This code is just a user of the program you need to install first on your system 
+the progamm is called tesseract
+see here:
+https://github.com/tesseract-ocr/tesseract
 
+This was tested only on windows 10
+to install it i used this compiled exe version from the UB Mannheim (German university)
+https://github.com/UB-Mannheim/Tesseract_Dokumentation/blob/main/Tesseract_Doku_Windows.md
+
+there i found the download link for the installer (Windows)
+https://digi.bib.uni-mannheim.de/tesseract/
+
+this is the download link for version 5.2 as a windows installer.
+https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.2.0.20220712.exe
+
+then the installation need to be added to the systems environment variables
+for that go to the windows search field ant type 'path'
+the should apperar environment variables click on it and search for Path and add
+the path where you installed tesseract to it.
+"D:\69\tesseract.exe"
 It works with pytesseract to get the text out of the images.
 First Tesseract need to be installed on your system
 you can download it from here as a windows installer
@@ -11,12 +30,6 @@ or take a complete (no installation pack from here) this is a zip file where eve
 https://drive.usercontent.google.com/download?id=1HUTPFedFiRulXveljQKp5yJNnTgkAuYF&export=download&authuser=0&confirm=t&uuid=b1f61fbe-a7dd-44e3-ae74-6918d08579c0&at=AO7h07eoNys3JWpyjVCj5o3eZ9Xu:1725203775527
 
 
-
-for that reasons it need ot be installed
-for that i created a Double_Click_Me_To_INSTALL_MiniConda_VENV_And_Requirements.bat
-this (only on windows) will download a loacal standalone miniconda and creates a 
-installer_files folder where it then installs the Requirements.txt into a virtual environment
-including tesseract.
 
 to run image to text  you can use the 
 Double_Click_Me_To_RUN_video_to_text_extractor_In_Terminal.bat

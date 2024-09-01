@@ -6,8 +6,6 @@ the quickest way to get results is to:
 
 5. when its completed you get the extracted text in the terminal and also in the output folder + the images in the ouput folder.
 
-
-
 to adjust the frame rate the video will be processed do the same as above but enter your value at  frame_rate.
 
 
@@ -67,6 +65,23 @@ in her left ear; they add just the right touch of sparkle to an already stu
 nning look!
 Ask a question about the image or type 'exit' to quit: |
 cE}
+
+some other information:
+Tokens are not cut up exactly where the words start or end; 
+tokens can include trailing spaces and even sub-words. 
+Here are some helpful rules of thumb for 
+understanding tokens in terms of lengths:
+ 
+1 token ~= 4 chars in English. 1 token ~= ¾ words. 100 tokens ~= 75 words.
+
+Just to put the number of "32k tokens" into somewhat estimated context. 
+32k tokens, 3/4 of 32k is 24k words, 
+each page average is 500 or 0.5k words, 
+so that's basically 24k / . 5k = 24 x 2 =~48 pages.
+
+
+
+
 
 ------------------------------------------------------------------ Video: D:\47\02\video_to_text_extractor\input\example_video.mp4 frame: 2
 100% Local Tiny Al Vision Language Model (1.6B) - Very Impressive!

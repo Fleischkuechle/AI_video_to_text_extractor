@@ -41,38 +41,33 @@ call "%CONDA_ROOT_PREFIX%\condabin\conda.bat" activate "%INSTALL_ENV_DIR%" || ( 
 
 
 
-
-
-
+echo to exit the programm close the terminal
 :input_loop
 REM Prompt the user for specific arguments
-set /p arg1=Enter video_path (close the terminal to exit): 
+set /p arg1=Enter video_path or press enter to use default folder: 
 
 if "%arg1%"=="" (
     set arg1="empty"
-    echo video_path is empty. searching for mp3 or mp4 file in the input folder.
-    echo %arg1%
+    echo using default folder .\user_data\output. will search for mp3 or mp4 files and process it.
 )
-set /p arg2=Enter output_name (close the terminal to exit): 
+@REM set /p arg2=Enter output_name or press enter to use default name: 
 
-if "%arg2%"=="" (
-    set arg2="empty"
-    echo output_name is empty. using default value output.txt.
+@REM if "%arg2%"=="" (
+@REM     set arg2="empty"
+@REM     echo using default output_name  default value is output.txt.
+@REM )
 
-    
-)
-
-set /p arg3=Enter frame_rate (close the terminal to exit): 
+set /p arg3=Enter frame_rate or press enter to use default : 
 
 if "%arg3%"=="" (
     set arg3=2
-    echo frame_rate is empty. using default value 2.
-    
+    echo using default frame_rate. default value =2.
 )
 
 @REM REM Run the Python script with the specific arguments provided by the user
 @REM python extract_fames.py %arg1% %arg2% %arg3%
 @REM #python extract_fames.py --video_path "D:\47\02\AI_video_to_text_extractor\user_data\example_video.mp4" --output_name "output.txt" --frame_rate 2
 REM Run the Python script with the specific arguments provided by the user
-python extract_fames.py --video_path %arg1% --output_name %arg2% --frame_rate %arg3%
+@REM python extract_fames.py --video_path %arg1% --output_name %arg2% --frame_rate %arg3%
+python extract_fames.py --video_path %arg1%  --frame_rate %arg3%
 pause

@@ -19,6 +19,8 @@ PyQt5-Qt5==5.15.2
 PyQt5-sip==12.13.0
 pyscreenshot==3.1
 pytesseract==0.3.10
+regex==2024.4.28
 requests==2.31.0
+tiktoken==0.6.0
 tqdm==4.66.4
 urllib3==2.2.1

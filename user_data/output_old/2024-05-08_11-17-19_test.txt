@@ -1,0 +1,126 @@
+tokens_normal count: 786 tiktokens_openai count: 2721        (tokens_normal is splitting the input string based on spaces. tiktokens_openai uses its own tiktoken repo for calculating tokens its something like this: 1 token ~= 4 chars in English. 1 token ~= ¾ words. 100 tokens ~= 75 words.)
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor_V_0_0_1\user_data\input\test.mp4 frame: 0
+@ TreBick XB beowol B What cos
+huggingface.co,
+<) Hugging Face Models Datasets Spaces Posts Docs Solutions Pricing -= @
+Hugging Face is way more fun with friends and colleagues! @ Join an organization Dismiss this message
+e CodeNinja-1.0-OpenChat-7B-GGUF 0 © like
+| TextGeneration @ Transformers GGUF —_& glaiveai/glaive-code-assistant-v2 TokenBender/code_instructions_122k_alpaca_style English mistral_ code @ text-generation-inference mit
+Model card Files and versions Community §  QTrainv —-@ Deployy —_ <> Use in Transformers
+B mainy — CodeNinja-1.0-OpenChat-78-GGUF @ contributor © History: 15 commits + Contribute
+@ TheBloke Upload README.md  d9ed7ff 5 months ago
+.gitattributes J
+README.md J
+codeninja-1.0-openchat-7b.Q2_K.gguf ©” ous L
+codeninja-1.0-openchat-7b.Q3_K_Lgguf 7” ous L
+codeninja-1.0-openchat-7b.Q3_K_Mgguf  @7 ous L
+codeninja-1.0-openchat-7b.Q3_K S.gguf  @” ous
+codeninja-1.0-openchat-7b.Q4_0.ggut  @” ous L
+codeninja-1.0-openchat-7b.Q4_K_Mgguf  @7 ous
+codeninja-1.0-openchat-7b.Q4_K S.gguf  @” ous L
+codeninja-1.0-openchat-7b.Q5_0.gguf @us J
+codeninja-1.0-openchat-7b.Q5_K_Mgguf  @7 ous L
+codeninja-1.0-openchat-7b.Q5_K S.gguf  @” ous
+codeninja-1.0-openchat-7b.Q6_K.gguf ©” ous L
+codeninja-1.0-openchat-7b.Q8_0.gguf @LFs
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor_V_0_0_1\user_data\input\test.mp4 frame: 1
+QB thetici xB Fy SB what cos © Is * (122) Ins
+huggingface.co,
+Hugging Face Models Datasets Spaces Posts Docs Solutions Pricing ~=
+Hugging Face is way more fun with friends and colleagues! @ Join an organization Dismiss this message
+e CodeNinja-1.0-OpenChat-7B-GGUF 0 © like
+% TextGeneration @ Transformers GGUF — & glaiveai/glaive-code-assistant-v2 TokenBender/code_instructions_122k_alpaca_style English mistral_ code @ text-generation-inference mit
+Model card Files and versions Community $  Qtrainy —-F Deployy —_ <> Usein Transformers
+B mainy — CodeNinja-1.0-OpenChat-78-GGUF @ contributor © History: 15 commits + Contribute
+@ TheBloke Upload README.md  d9ed7ff 5 months ago
+.gitattributes J
+README.md
+codeninja-1.0-openchat-7b.Q2_K.gguf  @” ous L
+codeninja-1.0-openchat-7b.Q3_K_Lgguf 7 ous
+codeninja-1.0-openchat-7b.Q3_K_Mgguf  @7 ous L
+codeninja-1.0-openchat-7b.Q3_K S.gguf  @” ous L
+codeninja-1.0-openchat-7b.Q4_0.ggut  @” ous L
+codeninja-1.0-openchat-7b.Q4_K_Mgguf  @7 ous L
+codeninja-1.0-openchat-7b.Q4_K S.gguf  @” ous L
+codeninja-1.0-openchat-7b.Q5_0.gguf @Lrs
+codeninja-1.0-openchat-7b.Q5_K_Mgguf  @7 ous L
+codeninja-1.0-openchat-7b.Q5_K S.gguf  @” ous L
+codeninja-1.0-openchat-7b.Q6_K.gguf  @” ous L
+codeninja-1.0-openchat-7b.Q8_0.gguf @us 4
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor_V_0_0_1\user_data\input\test.mp4 frame: 2
+QB thetici xB Fy SB what cos © Is * (122) Ins
+huggingface.co,
+Hugging Face Models Datasets Spaces Posts Docs Solutions Pricing ~=
+Hugging Face is way more fun with friends and colleagues! @ Join an organization Dismiss this message
+e CodeNinja-1.0-OpenChat-7B-GGUF 0 © like
+% TextGeneration @ Transformers GGUF — & glaiveai/glaive-code-assistant-v2 TokenBender/code_instructions_122k_alpaca_style English mistral_ code @ text-generation-inference mit
+Model card Files and versions Community $  Qtrainy —-F Deployy —_ <> Usein Transformers
+B mainy — CodeNinja-1.0-OpenChat-78-GGUF @ contributor © History: 15 commits + Contribute
+@ TheBloke Upload README.md  d9ed7ff 5 months ago
+.gitattributes J
+README.md
+codeninja-1.0-openchat-7b.Q2_K.gguf  @” ous L
+codeninja-1.0-openchat-7b.Q3_K_Lgguf 7 ous
+codeninja-1.0-openchat-7b.Q3_K_Mgguf  @7 ous L
+codeninja-1.0-openchat-7b.Q3_K S.gguf  @” ous L
+codeninja-1.0-openchat-7b.Q4_0.ggut  @” ous L
+codeninja-1.0-openchat-7b.Q4_K_Mgguf  @7 ous L
+codeninja-1.0-openchat-7b.Q4_K S.gguf  @” ous L
+codeninja-1.0-openchat-7b.Q5_0.gguf @Lrs
+codeninja-1.0-openchat-7b.Q5_K_Mgguf  @7 ous L
+codeninja-1.0-openchat-7b.Q5_K S.gguf  @” ous L
+codeninja-1.0-openchat-7b.Q6_K.gguf  @” ous L
+codeninja-1.0-openchat-7b.Q8_0.gguf @us 4
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor_V_0_0_1\user_data\input\test.mp4 frame: 3
+QB thetici xB Fy SB what cos © Is * (122) Ins
+huggingface.co,
+Hugging Face Models Datasets Spaces Posts Docs Solutions Pricing ~=
+Hugging Face is way more fun with friends and colleagues! @ Join an organization Dismiss this message
+e CodeNinja-1.0-OpenChat-7B-GGUF 0 © like
+% TextGeneration @ Transformers GGUF — & glaiveai/glaive-code-assistant-v2 TokenBender/code_instructions_122k_alpaca_style English mistral_ code @ text-generation-inference mit
+Model card Files and versions Community $  Qtrainy —-F Deployy —_ <> Usein Transformers
+B mainy — CodeNinja-1.0-OpenChat-78-GGUF @ contributor © History: 15 commits + Contribute
+@ TheBloke Upload README.md  d9ed7ff 5 months ago
+.gitattributes J
+README.md
+codeninja-1.0-openchat-7b.Q2_K.gguf  @” ous L
+codeninja-1.0-openchat-7b.Q3_K_Lgguf 7 ous
+codeninja-1.0-openchat-7b.Q3_K_Mgguf  @7 ous L
+codeninja-1.0-openchat-7b.Q3_K S.gguf  @” ous L
+codeninja-1.0-openchat-7b.Q4_0.ggut  @” ous L
+codeninja-1.0-openchat-7b.Q4_K_Mgguf  @7 ous L
+codeninja-1.0-openchat-7b.Q4_K S.gguf  @” ous L
+codeninja-1.0-openchat-7b.Q5_0.gguf @Lrs
+codeninja-1.0-openchat-7b.Q5_K_Mgguf  @7 ous L
+codeninja-1.0-openchat-7b.Q5_K S.gguf  @” ous L
+codeninja-1.0-openchat-7b.Q6_K.gguf  @” ous L
+codeninja-1.0-openchat-7b.Q8_0.gguf @us 4
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor_V_0_0_1\user_data\input\test.mp4 frame: 4
+QB thetici xB Fy SB what cos © Is * (122) Ins
+huggingface.co,
+Hugging Face Models Datasets Spaces Posts Docs Solutions Pricing ~=
+Hugging Face is way more fun with friends and colleagues! @ Join an organization Dismiss this message
+e CodeNinja-1.0-OpenChat-7B-GGUF 0 © like
+% TextGeneration @ Transformers GGUF — & glaiveai/glaive-code-assistant-v2 TokenBender/code_instructions_122k_alpaca_style English mistral_ code @ text-generation-inference mit
+Model card Files and versions Community $  Qtrainy —-F Deployy —_ <> Usein Transformers
+B mainy — CodeNinja-1.0-OpenChat-78-GGUF @ contributor © History: 15 commits + Contribute
+@ TheBloke Upload README.md  d9ed7ff 5 months ago
+.gitattributes J
+README.md
+codeninja-1.0-openchat-7b.Q2_K.gguf  @” ous L
+codeninja-1.0-openchat-7b.Q3_K_Lgguf 7 ous
+codeninja-1.0-openchat-7b.Q3_K_Mgguf  @7 ous L
+codeninja-1.0-openchat-7b.Q3_K S.gguf  @” ous L
+codeninja-1.0-openchat-7b.Q4_0.ggut  @” ous L
+codeninja-1.0-openchat-7b.Q4_K_Mgguf  @7 ous L
+codeninja-1.0-openchat-7b.Q4_K S.gguf  @” ous L
+codeninja-1.0-openchat-7b.Q5_0.gguf @Lrs
+codeninja-1.0-openchat-7b.Q5_K_Mgguf  @7 ous L
+codeninja-1.0-openchat-7b.Q5_K S.gguf  @” ous L
+codeninja-1.0-openchat-7b.Q6_K.gguf  @” ous L
+codeninja-1.0-openchat-7b.Q8_0.gguf @us 4

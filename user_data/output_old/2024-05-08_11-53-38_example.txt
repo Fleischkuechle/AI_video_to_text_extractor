@@ -1,0 +1,731 @@
+tokens_normal count: 3589 tiktokens_openai count: 7956        (tokens_normal is splitting the input string based on spaces. tiktokens_openai uses its own tiktoken repo for calculating tokens its something like this: 1 token ~= 4 chars in English. 1 token ~= ¾ words. 100 tokens ~= 75 words.)
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor_V_0_0_1\user_data\input\example.mp4 frame: 0
+mB’ g&e oD
+Dm §)
+File Edit
+Selection View Go Run =: Ge
+® extract fames.py M X ® delete_all_images_in_output_old.py U
+® extract_fames.py > @ extract_video_function
+Date: [07.05.2024]
+Version: [0.0.1]
+see tutorial on Youtube on my channel.
+www. youtube. com/@Umocap
+Usage:
+- Ensure you have Python [Python 3.11.9] installed.
+- Run the script by executing 'extract_fames.py' in the terminal.
+Dependencies:
+- [requirements.txt]
+Example:
+- [take a look into Double_Click_Me_To_RUN_video_to_text_extractor_Autonomous_at_Frame_Rate_@1.bat here you can see the example usage. ]
+import os
+import cv2
+import pytesseract
+import argparse
+from moviepy.video.io.VideoFileClip import VideoFileClip
+from datetime import datetime
+from tqdm import tqdm
+from typing import Union
+import shutil
+from typing import List, Tuple
+#dealing with all the folders.
+self_filepath: str=os.path.dirname(os.path.abspath(__file_))
+tesseract_exe_rel_path:str=r"\tesseract_ocr\tesseract.exe"
+output_folder:str = r"\user_data\output”
+output_folder_path_default:str=self_filepathtoutput_folder
+output_folder_old:str = r"\user_data\output_old"
+ee eee ere | eee eee 2 ee ee ee eS
+P Al_video_to_text_extractor_V_0_0.1 Os - x
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor_V_0_0_1\user_data\input\example.mp4 frame: 2
+mB’ ge oD
+om $]
+File Edit
+Selection View Go Run =: a
+® extract fames.py M X ® delete_all_images_in_output_old.py U
+® extract_fames.py > @ extract_video_function
+alg)
+Zil,
+22)
+23)
+25)
+Pas
+Date: [07.05.2024]
+Version: [0.0.1]
+see tutorial on Youtube on my channel.
+www. youtube. com/@Umocap
+Usage:
+- Ensure you have Python [Python 3.11.9] installed.
+- Run the script by executing ‘extract_fames.py' in the terminal.
+Dependencies:
+- [requirements.txt]
+Example:
+- [take a look into Double_Click_Me_To_RUN_video_to_text_extractor_Autonomous_at_Frame_Rate_@1.bat here you can see the example usage. ]
+import os
+import cv2
+import pytesseract
+import argparse
+from moviepy.video.io.VideoFileClip import VideoFileClip
+from datetime import datetime
+from tqdm import tqdm
+from typing import Union
+import shutil
+from typing import List, Tuple
+#dealing with all the folders.
+self_filepath: str=os.path.dirname(os.path.abspath(__file_))
+tesseract_exe_rel_path:str=r"\tesseract_ocr\tesseract.exe"
+output_folder:str = r"\user_data\output”
+output_folder_path_default:str=self_filepatht+output_folder
+output_folder_old:str = r"\user_data\output_old”
+ee a rer A a Fe oa, eee hen Te eta a |
+P& Alvideo_to_text_extractor_V_0_0_1 Os - x
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor_V_0_0_1\user_data\input\example.mp4 frame: 4
+J File Edit Selection View Go Run -~ <5 P Alvideo_to_text_extractor_V_0_0.1 os - x
+® extract fames.py M X ® delete_all_images_in_output_old.py U
+® extract_fames.py > @ extract_video_function
+8 see tutorial on Youtube on my channel.
+9 www. youtube.com/@Umocap
+mB’ €e oD
+11 Usage:
+12 - Ensure you have Python [Python 3.11.9] installed.
+13 - Run the script by executing 'extract_fames.py' in the terminal.
+15 Dependencies:
+16 - [requirements.txt]
+Le 18] Example:
+19 - [take a look into Double_Click_Me_To_RUN_video_to_text_extractor_Autonomous_at_Frame_Rate_@1.bat here you can see the example usage. ]
+A 21
+23 import os
+24 import cv2
+25 import pytesseract
+26 import argparse
+27 , from moviepy.video.io.VideoFileClip import VideoFileClip
+28 from datetime import datetime
+29 from tqdm import tqdm
+38 from typing import Union
+31 import shutil
+32 from typing import List, Tuple
+ee)
+34/ #dealing with all the folders.
+35 ; self_filepath: str=os.path.dirname(os.path.abspath(__file_))
+367; tesseract_exe_rel_path:str=r"\tesseract_ocr\tesseract.exe"
+37) output_folder:str = r“\user_data\output”
+38 ; output_folder_path_default:str=self_filepathtoutput_folder
+397 output_folder_old:str = r"\user_data\output_old”
+40 i output_folder_old_path_default:str=self_filepatht+output_folder_old
+input_folder:str=r"\user_data\input"
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor_V_0_0_1\user_data\input\example.mp4 frame: 6
+J File Edit Selection View Go Run -~ <5 P Alvideo_to_text_extractor_V_0_01 os - x
+® extract fames.py M X  ® delete_all_images_in_output_old.py U Py bal Pa
+® extract_fames.py > @ extract_video_function
+37 output_folder:str = r"\user_data\output" Fa
+output_folder_path_default:str=self_filepatht+output_folder
+output_folder_old:str = r"\user_data\output_old”
+output_folder_old_path_default:str=self_filepatht+output_folder_old
+input_folder:str=r"\user_data\input”
+input_folder_path_default: str=self_filepath+input_folder
+default_headline:str="can you extract all code from the following text, fix it and print the complete code"
+7 Fe 0D
+44 default_frame_rate:int=2
+aay 45 | max_file_count:int=50
+def extract_text_at_frame_rate( video_path:str="",
+output_text_file (str): Name of the output text file.
+frame_rate (int): Desired frame rate (in seconds). Default is 2 seconds.
+tesseract_path (str): Path to the Tesseract executable. by default it has "whereever you placed this package\tesseract_ocr\tesseract.exe"
+image_output_folder_path (str): the path where the extracted images will be saved.(Be aware if running multible times the images will ge
+NAD
+49) #output_name:str="output.txt",
+A 50 / frame_rate:int=2,
+51} tesseract_path:st
+. 52) output_folder_path:str=
+oS 33) headline: str=
+54) )->str: 1
+eos
+56; Extract text (including Python code) from video frames at a defined frame rate.
+57) The for loop in your script processes frames at the specified frame rate, not every frame of the video clip. Let me explain in more detail: |
+59) The VideoFileClip object (clip) represents the entire video file. When you call clip.get_frame(t) inside the loop, it retrieves the frame at {
+60; The loop iterates from t = @ to t = int(clip.duration) with a step size of frame_rate. This means it processes frames at regular intervals de‘! 1
+61} For example, if your video has a duration of 1@ seconds and you set frame_rate = 2, the loop will process frames at 2-second intervals (i.e., |
+62) Frames between these intervals are skipped, so not every frame in the video is processed. If you want to process every frame, you would need + H
+63/ Remember that the choice of frame rate affects the trade-off between accuracy (processing more frames) and efficiency (processing fewer fram
+64}
+65 i Args:
+66; video_path (str): Path to the video file.
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor_V_0_0_1\user_data\input\example.mp4 frame: 8
+J File Edit Selection View Go Run -~ <5 P Alvideo_to_text_extractor_V_0_01 os - x
+® extract fames.py M X  ® delete_all_images_in_output_old.py U Py bal Pa
+® extract_fames.py > @ extract_video_function
+37 output_folder:str = r"\user_data\output" Fa
+output_folder_path_default:str=self_filepatht+output_folder
+output_folder_old:str = r"\user_data\output_old”
+output_folder_old_path_default:str=self_filepatht+output_folder_old
+input_folder:str=r"\user_data\input”
+input_folder_path_default: str=self_filepath+input_folder
+default_headline:str="can you extract all code from the following text, fix it and print the complete code"
+7 Fe 0D
+44 default_frame_rate:int=2
+aay 45 | max_file_count:int=50
+def extract_text_at_frame_rate( video_path:str="",
+output_text_file (str): Name of the output text file.
+frame_rate (int): Desired frame rate (in seconds). Default is 2 seconds.
+tesseract_path (str): Path to the Tesseract executable. by default it has "whereever you placed this package\tesseract_ocr\tesseract.exe"
+image_output_folder_path (str): the path where the extracted images will be saved.(Be aware if running multible times the images will ge
+NAD
+49) #output_name:str="output.txt",
+A 50 / frame_rate:int=2,
+51} tesseract_path:st
+. 52) output_folder_path:str=
+oS 33) headline: str=
+54) )->str: 1
+eos
+56; Extract text (including Python code) from video frames at a defined frame rate.
+57) The for loop in your script processes frames at the specified frame rate, not every frame of the video clip. Let me explain in more detail: |
+59) The VideoFileClip object (clip) represents the entire video file. When you call clip.get_frame(t) inside the loop, it retrieves the frame at {
+60) The loop iterates from t = @ to t = int(clip.duration) with a step size of frame_rate. This means it processes frames at regular intervals de‘! 1
+61} For example, if your video has a duration of 1@ seconds and you set frame_rate = 2, the loop will process frames at 2-second intervals (i.e., |
+62) Frames between these intervals are skipped, so not every frame in the video is processed. If you want to process every frame, you would need + H
+63/ Remember that the choice of frame rate affects the trade-off between accuracy (processing more frames) and efficiency (processing fewer fram
+64}
+65 i Args:
+66) video_path (str): Path to the video file.
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor_V_0_0_1\user_data\input\example.mp4 frame: 10
+J File Edit Selection View Go Run -* <5 P Alvideo_to_text_extractor_V_0_0.1 os - x
+® extract fames.py M X  ® delete_all_images_in_output_old.py U Py {a Bee
+® extract_fames.py > @ extract_video_function
+37 output_folder:str = r"\user_data\output"
+output_folder_path_default:str=self_filepatht+output_folder
+output_folder_old:str = r"\user_data\output_old"
+output_folder_old_path_default:str=self_filepath+output_folder_old
+input_folder:str=r"\user_data\input”
+input_folder_path_default:str=self_filepath+input_folder
+default_headline:str="can you extract all code from the following text, fix it and print the complete code"
+7 Fe 0D
+44 default_frame_rate:int=2
+Ral 45 | max_file_count:int=50
+BAR
+def extract_text_at_frame_rate( video_path:str="",
+output_text_file (str): Name of the output text file.
+frame_rate (int): Desired frame rate (in seconds). Default is 2 seconds.
+tesseract_path (str): Path to the Tesseract executable. by default it has "whereever you placed this package\tesseract_ocr\tesseract.exe"
+image_output_folder_path (str): the path where the extracted images will be saved.(Be aware if running multible times the images will ge
+NAD
+49) #output_name:str="output.txt",
+A 50 i frame_rate:int=2,
+513 tesseract_path:st
+_ 52 ; output_folder_path:str=
+537 headline: str=
+54) )->str: oa |
+eos
+567 Extract text (including Python code) from video frames at a defined frame rate.
+57) The for loop in your script processes frames at the specified frame rate, not every frame of the video clip. Let me explain in more detail: |
+59) The VideoFileClip object (clip) represents the entire video file. When you call clip.get_frame(t) inside the loop, it retrieves the frame at 7‘
+60/ The loop iterates from t = @ to t = int(clip.duration) with a step size of frame_rate. This means it processes frames at regular intervals de‘! r
+61} For example, if your video has a duration of 1@ seconds and you set frame_rate = 2, the loop will process frames at 2-second intervals (i.e., |
+62) Frames between these intervals are skipped, so not every frame in the video is processed. If you want to process every frame, you would need ¢ H
+63/ Remember that the choice of frame rate affects the trade-off between accuracy (processing more frames) and efficiency (processing fewer fram oe
+64}
+65 j Args:
+66) video_path (str): Path to the video file.
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor_V_0_0_1\user_data\input\example.mp4 frame: 12
+J File Edit Selection View Go Run = es P Alvideo_to_text_extractorV_0_0_1 as - x
+® extract fames.py M X ® delete_all_images_in_output_old.py U Py {ah Bee
+® extract_fames.py > @ extract_video_function
+48 def extract_text_at_frame_rate( video_path: str:
+734 output:str="nothing done.“
+if output_folder_path=='
+output_folder_path = output_folder_path_default
+or output_folder_path=="empty": #if empty we use the default output folder
+7 & 0 DG
+iS}
+#output_name=output_name,
+frame_rate=frame_rate,
+output_folder_path=output_folder_path,
+headline=headline,
+RPeR
+76) if headline=="empty" or headline=="":
+77 ; headline=default_headline
+73)
+79} # if output_name=="empty" or output_name=="":
+at 80 ; # output_name="output.txt"
+81} # output_name=add_file_ending(output_name,".txt")
+O82)
+© 837 if tesseract_path=
+84) tesseract_path=self_filepath+tesseract_exe_rel_path
+A EY ; #check_and_delete_files(output_folder_path,max_file_count)
+87 j check_and_move_files(output_folder_path=output_folder_path,
+es 88 ; destination_folder=output_folder_old_path_default,
+89 j threshold=max_file_count
+98} )
+& 91) os.makedirs(output_folder_path, exist_ok=True)
+92 i video_pathes=[]
+93) if video_path=="empty" or video_path=="":
+947 input_folder_path = self_filepath+input_folder
+954 video_pathes= search_files(input_folder_path)
+96 ; if len(video_pathes)>0:
+98} for i in range(len(video_pathes)):
+99/ print("starting Extracting video: "+video_pathes[i] +" to: " +output_folder_path+ " at a frame_rate of: " + str( frame_rate )+"
+100 ; result=extract_video_function( video_path=video_pathes[i],
+101 j tesseract_path=tesseract_path,
+2 |
+3 |
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor_V_0_0_1\user_data\input\example.mp4 frame: 14
+J File Edit Selection View Go Run = S> P Alvideo_to_text_extractorV_0_0_1 as - x
+® extract fames.py M X  ® delete_all_images_in_output_old.py U Py {a Bee
+® extract fames.py > © extract_video_function
+48 def extract_text_at_frame_rate( video_path:str="",
+destination_folder=output_folder_old_path_default,
+threshold=max_file_count
+os.makedirs(output_folder_path, exist_ok=True)
+video_pathes=[]
+if video_path=="empty" or video_path 5
+input_folder_path = self_filepath+input_folder
+video_pathes= search_files(input_folder_path)
+if len(video_pathes)>@:
+7 & 0 DG
+—{c)
+for i in range(len(video_pathes)):
+print("starting Extracting video: "+video_pathes[i] +" to: " +output_folder_path+ " at a frame_rate of:
+result=extract_video_function( video_path=video_pathes[i],
+tesseract_path=tesseract_path,
+#output_name=output_name,
+frame_rate=frame_rate,
+output_folder_path=output_folder_path,
+headline=headline,
++ str( frame_rate )+"
+@ @€ B
+print(result)
+else:
+print("No video found in input folder (make sure you put the video ()mp3 ormp4) into the input folder.")
+else:
+print("starting Extracting video: "+video_path +" to:
+result=extract_video_function( video_path=video_path,
+tesseract_path=tesseract_path,
+#output_name=output_name,
+frame_rate=frame_rate,
+output_folder_path=output_folder_path,
+headline=headline,
++output_folder_patht+ " at a frame_rate of: " + str( frame_rate )+" with this Pyte:
+print(result)
+pe ae nae = —S
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor_V_0_0_1\user_data\input\example.mp4 frame: 16
+J File Edit Selection View Go Run = S> P Alvideo_to_text_extractorV_0_0_1 as - x
+® extract fames.py M X  ® delete_all_images_in_output_old.py U Py {a Bee
+® extract fames.py > © extract_video_function
+48 def extract_text_at_frame_rate( video_path:str="",
+destination_folder=output_folder_old_path_default,
+threshold=max_file_count
+os.makedirs(output_folder_path, exist_ok=True)
+video_pathes=[]
+if video_path=="empty" or video_path 5
+input_folder_path = self_filepath+input_folder
+video_pathes= search_files(input_folder_path)
+if len(video_pathes)>@:
+7 & 0 DG
+—{c)
+for i in range(len(video_pathes)):
+print("starting Extracting video: "+video_pathes[i] +" to: " +output_folder_path+ " at a frame_rate of:
+result=extract_video_function( video_path=video_pathes[i],
+tesseract_path=tesseract_path,
+#output_name=output_name,
+frame_rate=frame_rate,
+output_folder_path=output_folder_path,
+headline=headline,
++ str( frame_rate )+"
+@ @€ B
+print(result)
+else:
+print("No video found in input folder (make sure you put the video ()mp3 ormp4) into the input folder.")
+else:
+print("starting Extracting video: "+video_path +" to:
+result=extract_video_function( video_path=video_path,
+tesseract_path=tesseract_path,
+#output_name=output_name,
+frame_rate=frame_rate,
+output_folder_path=output_folder_path,
+headline=headline,
++output_folder_patht+ " at a frame_rate of: " + str( frame_rate )+" with this Pyte:
+print(result)
+pe ae nae = —S
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor_V_0_0_1\user_data\input\example.mp4 frame: 18
+J File Edit Selection View Go Run = S> P Alvideo_to_text_extractorV_0_0_1 as - x
+® extract fames.py M X  ® delete_all_images_in_output_old.py U Py {a Bee
+® extract fames.py > © extract_video_function
+48 def extract_text_at_frame_rate( video_path:str="",
+7 & 0 DG
+88 j destination_folder=output_folder_old_path_default,
+897 threshold=max_file_count |
+2) ) |
+91; os.makedirs(output_folder_path, exist_ok=True)
+92} video_pathes=[]
+93) if video_path=="empty" or video_path 3
+“er 947 input_folder_path = self_filepath+input_folder
+} 957 video_pathes= search_files(input_folder_path)
+96 j if len(video_pathes)>0:
+mm 97}
+=O 98) for i in range(len(video_pathes)):
+99) print("starting Extracting video: "+video_pathes[i] +" to: " +output_folder_path+ " at a frame_rate of: " + str( frame_rate )+"
+A 100 / result=extract_video_function( video_path=video_pathes[i],
+101 i tesseract_path=tesseract_path,
+we 162 i #output_name=output_name,
+103 ; frame_rate=frame_rate, I)
+104 i output_folder_path=output_folder_path,
+w& 1@5 ; headline=headline,
+106 ; )
+107 ; print(result) i!
+108 ; else:
+109 print("No video found in input folder (make sure you put the video ()mp3 ormp4) into the input folder.")
+11@ ; else:
+111} print("starting Extracting video: "+video_path +" to: " +output_folder_path+ " at a frame_rate of: " + str( frame_rate )+" with this Pyte:
+112 j result=extract_video_function( video_path=video_path,
+113} tesseract_path=tesseract_path,
+114 H #output_name=output_name,
+115 j frame_rate=frame_rate,
+116 ; output_folder_path=output_folder_path,
+117; headline=headline,
+11s} )
+119 i print(result)
+antnnt—_racilt
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor_V_0_0_1\user_data\input\example.mp4 frame: 20
+mB’ &e oD
+Dm §]
+File Edit Selection View Go Run -*- e> P Alvideo_to_text_extractorV_0_0_1
+® extract fames.py M X  ® delete_all_images_in_output_old.py U
+® extract_fames.py > @ extract_video_function
+48 def extract_text_at_frame_rate( video_path: str:
+j output=result
+return output
+oBNB
+125 def remove_empty_lines(input_string:str):
+126 uae
+127 Remove empty lines from a string.
+128 Example usage
+129 input_text = "Hello\n\nWorld\n\n\nPython"
+138 output_text = remove_empty_lines(input_text)
+131 print (output_text)
+133 Args:
+134 input_string (str): Input string with empty lines.
+136 Returns:
+137 str: String with empty lines removed.
+138 ta!
+139 lines = input_string.split('\n') # Split the input string into lines
+148 non_empty_lines = [line for line in lines if line.strip()] # Filter out empty lines
+141 return '\n'.join(non_empty_lines) # Join non-empty lines back into a string
+143 j def remove_empty_and_numeric_lines(input_string:str):
+144 bt
+145 Remove empty lines and lines containing only numbers from a string.
+146 # Example usage
+147 input_text = "Hello\n123\n\nWorld\n456\n\n\nPython"
+148 output_text = remove_empty_and_numeric_lines(input_text)
+149 print(output_text)
+151 Args:
+152 input_string (str): Input string with empty and numeric lines.
+154 Returns:
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor_V_0_0_1\user_data\input\example.mp4 frame: 22
+mB’ &e oD
+Dm §]
+File Edit Selection View Go Run -*- e> P Alvideo_to_text_extractorV_0_0_1
+® extract fames.py M X  ® delete_all_images_in_output_old.py U
+® extract_fames.py > @ extract_video_function
+48 def extract_text_at_frame_rate( video_path: str:
+j output=result
+return output
+oBNB
+125 def remove_empty_lines(input_string:str):
+126 uae
+127 Remove empty lines from a string.
+128 Example usage
+129 input_text = "Hello\n\nWorld\n\n\nPython"
+138 output_text = remove_empty_lines(input_text)
+131 print (output_text)
+133 Args:
+134 input_string (str): Input string with empty lines.
+136 Returns:
+137 str: String with empty lines removed.
+138 ta!
+139 lines = input_string.split('\n') # Split the input string into lines
+148 non_empty_lines = [line for line in lines if line.strip()] # Filter out empty lines
+141 return '\n'.join(non_empty_lines) # Join non-empty lines back into a string
+143 j def remove_empty_and_numeric_lines(input_string:str):
+144 bt
+145 Remove empty lines and lines containing only numbers from a string.
+146 # Example usage
+147 input_text = "Hello\n123\n\nWorld\n456\n\n\nPython"
+148 output_text = remove_empty_and_numeric_lines(input_text)
+149 print(output_text)
+151 Args:
+152 input_string (str): Input string with empty and numeric lines.
+154 Returns:
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor_V_0_0_1\user_data\input\example.mp4 frame: 24
+mB’ &e oD
+Dm §]
+File Edit Selection View Go Run -*- e> P Alvideo_to_text_extractorV_0_0_1
+® extract fames.py M X  ® delete_all_images_in_output_old.py U
+® extract_fames.py > @ extract_video_function
+48 def extract_text_at_frame_rate( video_path: str:
+j output=result
+return output
+oBNB
+125 def remove_empty_lines(input_string:str):
+126 uae
+127 Remove empty lines from a string.
+128 Example usage
+129 input_text = "Hello\n\nWorld\n\n\nPython"
+138 output_text = remove_empty_lines(input_text)
+131 print (output_text)
+133 Args:
+134 input_string (str): Input string with empty lines.
+136 Returns:
+137 str: String with empty lines removed.
+138 ta!
+139 lines = input_string.split('\n') # Split the input string into lines
+148 non_empty_lines = [line for line in lines if line.strip()] # Filter out empty lines
+141 return '\n'.join(non_empty_lines) # Join non-empty lines back into a string
+143 j def remove_empty_and_numeric_lines(input_string: str):
+144 an
+145 Remove empty lines and lines containing only numbers from a string.
+146 # Example usage
+147 input_text = "Hello\n123\n\nWorld\n456\n\n\nPython"
+148 output_text = remove_empty_and_numeric_lines(input_text)
+149 print(output_text)
+151 Args:
+152 input_string (str): Input string with empty and numeric lines.
+154 Returns:
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor_V_0_0_1\user_data\input\example.mp4 frame: 26
+7 Fe 0D
+Dm §]
+i J
+File Edit
+Selection View Go Run = c= P Alvideo_to_text_extractorV_0_0_1
+® extract fames.py M X ® delete_all_images_in_output_old.py U
+® extract_fames.py > @ extract_video_function
+161 }
+def
+def
+def
+remove_empty_lines(input_string:str):
+Laaupss usage
+input_text = "Hello\n\nWorld\n\n\nPython"
+output_text = remove_empty_lines(input_text)
+print(output_text)
+Args:
+input_string (str): Input string with empty lines.
+Returns:
+str: String with empty lines removed.
+lines = input_string.split('\n') # Split the input string into lines
+non_empty_lines = [line for line in lines if line.strip()] # Filter out empty lines
+return '\n'.join(non_empty_lines) # Join non-empty lines back into a string
+remove_empty_and_numeric_lines(input_string:str):
+Remove empty lines and lines containing only numbers from a string.
+# Example usage
+input_text = "Hello\n123\n\nWorld\n456\n\n\nPython"
+output_text = remove_empty_and_numeric_lines(input_text)
+print (output_text)
+Args:
+input_string (str): Input string with empty and numeric lines.
+Returns:
+str: String with empty and numeric lines removed.
+lines = input_string.split('\n') # Split the input string into lines
+non_empty_lines = [line for line in lines if line.strip() and not line.strip().isdigit()]
+return '\n'.join(non_empty_lines) # Join non-empty lines back into a string
+count_existing_files(target_folder_path:str):
+# Filter out empty and numeric lines
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor_V_0_0_1\user_data\input\example.mp4 frame: 28
+7 Fe 0D
+Dm §]
+File Edit
+® extract fames.py M X  ® delete_all_images_in_output_old.py U
+® extract_fames.py > @ extract_video_function
+shes)
+alzaat
+Selection View Go Run -* = = P Alvideo_to_text_extractor_V_0_0.1 Os - x
+def
+def
+def
+remove_empty_and_numeric_lines(input_string:str):
+Returns:
+str: String with empty and numeric lines removed.
+lines = input_string.split('\n') # Split the input string into lines
+non_empty_lines = [line for line in lines if line.strip() and not line.strip().isdigit()] # Filter out empty and numeric lines
+return '\n'.join(non_empty_lines) # Join non-empty lines back into a string
+count_existing_files(target_folder_path:str):
+Count the existing files in the specified folder.
+Args:
+target_folder_path (str): Path to the folder containing files.
+Returns:
+int: Number of existing files in the folder.
+file_count = @
+if os.path.exists(target_folder_path):
+for file in os.listdir(target_folder_path):
+file_path = os.path.join(target_folder_path, file)
+try:
+if os.path.isfile(file_path):
+file_count += 1
+except Exception as e:
+print(f"Error accessing {file_path}: {e}")
+return file_count
+delete_existing_files(target_folder_path:str):
+delete existing files in the specified folder.
+Args:
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor_V_0_0_1\user_data\input\example.mp4 frame: 30
+7 Fe 0D
+Dm §]
+i J
+File Edit
+® extract fames.py M X ® delete_all_images_in_output_old.py U
+® extract_fames.py > @ extract_video_function
+shes)
+alzaat
+Selection View Go Run -* = => P Alvideo_to_text_extractor_V_0_0.1 Os - x
+def
+def
+def
+remove_empty_and_numeric_lines(input_string:str):
+Returns:
+str: String with empty and numeric lines removed.
+lines = input_string.split('\n') # Split the input string into lines
+non_empty_lines = [line for line in lines if line.strip() and not line.strip().isdigit()] # Filter out empty and numeric lines
+return '\n'.join(non_empty_lines) # Join non-empty lines back into a string
+count_existing_files(target_folder_path:str):
+Count the existing files in the specified folder.
+Args:
+target_folder_path (str): Path to the folder containing files.
+Returns:
+int: Number of existing files in the folder.
+file_count = 0
+if os.path.exists(target_folder_path):
+for file in os.listdir(target_folder_path):
+file_path = os.path.join(target_folder_path, file)
+try:
+if os.path.isfile(file_path):
+file_count += 1
+except Exception as e:
+print(f"Error accessing {file_path}: {e}")
+return file_count
+delete_existing_files(target_folder_path:str):
+delete existing files in the specified folder.
+Args:
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor_V_0_0_1\user_data\input\example.mp4 frame: 32
+7 Fe 0D
+@ @€ b&
+File Edit
+Selection View Go Run -* S =
+P Alvideo_to_text_extractor_V_0_0.1
+® extract fames.py M X  ® delete_all_images_in_output_old.py U
+® extract_fames.py > @ extract_video_function
+BRON
+def
+count_existing_files(target_folder_path:str):
+Wun ene cAsocang f4aco an ue Speear acu 1Usuer.
+Args:
+target_folder_path (str): Path to the folder containing files.
+Returns:
+int: Number of existing files in the folder.
+file_count = 0
+if os.path.exists(target_folder_path):
+for file in os.listdir(target_folder_path):
+file_path = os.path.join(target_folder_path, file)
+try:
+if os.path.isfile(file_path):
+file_count += 1
+except Exception as e:
+print(f"Error accessing {file_path}: {e}")
+return file_count
+delete_existing_files(target_folder_path:str):
+delete existing files in the specified folder.
+Args:
+target_folder_path (str): Path to the folder containing images.
+if os.path.exists(target_folder_path):
+for file in os.listdir(target_folder_path):
+file_path = os.path.join(target_folder_path, file)
+try:
+if os.path.isfile(file_path):
+os.remove(file_path)
+except Exception as e:
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor_V_0_0_1\user_data\input\example.mp4 frame: 34
+7 Fe 0D
+@ @ b&
+File Edit
+Selection View Go Run - €5 P Al video_to_text_extractor_V_0_0_1
+® extract fames.py M X  ® delete_all_images_in_output_old.py U
+® extract_fames.py > @ extract_video_function
+def del Fil
+Args:
+target_folder_path (str): Path to the folder containing images.
+if os.path.exists(target_folder_path):
+for file in os.listdir(target_folder_path):
+file_path = os.path.join(target_folder_path, file)
+try:
+if os.path.isfile(file_path):
+os.remove(file_path)
+except Exception as e:
+print(f"Error deleting {file_path}: {e}")
+def delete_existing_image_files(target_folder_path: str):
+Delete existing image files in the specified folder.
+this are the supported image file types: '.jpg', '.jpeg', '.png', '.gif', '.bmp'
+Args:
+target_folder_path (str): Path to the folder containing images.
+if os.path.exists(target_folder_path):
+for file in os.listdir(target_folder_path):
+file_path = os.path.join(target_folder_path, file)
+try:
+if os.path.isfile(file_path) and (file.lower().endswith(('.jpg', ‘-jpeg',
+os.remove(file_path)
+except Exception as e:
+print(f"Error deleting {file_path}: {e}")
+# Example usage
+target_folder = "path/to/your/folder"
+delete_existing_image_files(target_folder)
+“.png',
+‘.gif', ‘.bmp'))):
+
+------------------------------------------------------------------ Video: D:\47\02\AI_video_to_text_extractor_V_0_0_1\user_data\input\example.mp4 frame: 36
+7 Fe 0D
+@ @€ b&
+File Edit
+Selection View Go Run - €5 P Alvideo_to_text_extractor_V_0_0_1
+® extract fames.py M X ® delete_all_images_in_output_old.py U
+® extract_fames.py > @ extract_video_function
+def del Fil
+Args:
+target_folder_path (str): Path to the folder containing images.
+if os.path.exists(target_folder_path):
+for file in os.listdir(target_folder_path):
+file_path = os.path.join(target_folder_path, file)
+try:
+if os.path.isfile(file_path):
+os.remove(file_path)
+except Exception as e:
+print(f"Error deleting {file_path}: {e}")
+def delete_existing_image_files(target_folder_path: str):
+Delete existing image files in the specified folder.
+this are the supported image file types: '.jpg', '.jpeg', '.png', '.gif', '.bmp'
+Args:
+target_folder_path (str): Path to the folder containing images.
+if os.path.exists(target_folder_path):
+for file in os.listdir(target_folder_path):
+file_path = os.path.join(target_folder_path, file)
+try:
+if os.path.isfile(file_path) and (file.lower().endswith(('.jpg', '-jpeg',
+os.remove(file_path)
+except Exception as e:
+print(f"Error deleting {file_path}: {e}")
+# Example usage
+target_folder = "path/to/your/folder"
+delete_existing_image_files(target_folder)
+".png',
+‘.gif', ‘.bmp'))):

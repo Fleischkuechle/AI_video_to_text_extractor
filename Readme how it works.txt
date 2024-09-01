@@ -1,3 +1,25 @@
+
+This code is just a user of the program you need to install first on your system 
+the progamm is called tesseract
+see here:
+https://github.com/tesseract-ocr/tesseract
+
+This was tested only on windows 10
+to install it i used this compiled exe version from the UB Mannheim (German university)
+https://github.com/UB-Mannheim/Tesseract_Dokumentation/blob/main/Tesseract_Doku_Windows.md
+
+there i found the download link for the installer (Windows)
+https://digi.bib.uni-mannheim.de/tesseract/
+
+this is the download link for version 5.2 as a windows installer.
+https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.2.0.20220712.exe
+
+then the installation need to be added to the systems environment variables
+for that go to the windows search field ant type 'path'
+the should apperar environment variables click on it and search for Path and add
+the path where you installed tesseract to it.
+"D:\69\tesseract.exe"
+
 the quickest way to get results is to:
 1. drop the video you want to extract the text from into the input folder
 2. run Double_Click_Me_To_RUN_video_to_text_extractor_In_Terminal.bat

@@ -47,10 +47,25 @@ it will extract frame 1 ,6,11,16....
 
 
 If you downlaoded the complete package you can run the 
-Double_Click_Me_To_RUN_video_to_text_extractor_In_Terminal.bat
+Double_Click_Me_To_RUN_video_to_text_extractor_In_Terminal.bat (2)
 
-make sure you putted the video file into the input folder before you run the bat file
+make sure you putted the video file into the input folder before you run the bat file (1)
 D:\69\video_to_text_extractor\input
-after the process is completed the results you will find in the output folder
+after the process is completed the results you will find in the output folder (3)
 D:\69\video_to_text_extractor\output
 
+
+
+![alt text](image-2.png)
+
+
+
+there is also a test script for extracting text from a image 
+to test it you can run Double_Click_Me_To_Run_quickstart_test_text_from_image.bat (1) (just double click on it in the windows explorer) (that should open a terminal)
+this bat file opens the python virtual environment inside the installer_files folder 
+the it runs the quickstart_test_text_from_image.py
+you should see the text from the quickstart_test.png (2)
+printed out in the terminal
+
+
+![alt text](image-3.png)
